@@ -1,0 +1,507 @@
+/*左边模块样式start*/
+.left-container {
+    position: absolute;
+    top: 102px;
+    left: 15px;
+    width: 448px;
+    height: 90%;
+    background-color: rgba(0,0,0,.5);
+    z-index: 999;
+  }
+  .left-container .top-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 448px;
+    height: 300px;
+    opacity: 1;
+    background: url("../../images/xfctd/labelBack.png") no-repeat;
+    background-size: 100% 100%;
+  }
+.left-container .middle-box {
+    position: absolute;
+    top: 325px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 448px;
+    height: 300px;
+    opacity: 1;
+    background: url("../../images/xfctd/labelBack.png") no-repeat;
+    background-size: 100% 100%;
+}
+ #unitCharts-container {
+  width: 250px;
+  height: 250px;
+ }
+ .top-box-container {
+    width: 100%;
+    height: 70%;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+ }
+ .top-box-container .top-box-item {
+    width: 50%;
+    height: 50%;
+    /* margin: 0 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ }
+ .top-box-container .top-box-item .title {
+    font-family: PingFang SC;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+    opacity: .85;
+ }
+ 
+ .top-box-container .content {
+    width: 190px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+ }
+ .top-box-container .top-box-item .content .number {
+    width: 150px;
+    height: 34px;
+    background: url('../../images/xfctd/yinzhouScreen/1综合态势/总体态势/nav_Bg.png') no-repeat;
+    background-size: 100% 100%;
+    line-height: 40px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+ } 
+ .top-box-container .top-box-item .content .icon {
+    width: 40px;
+    height: 40px;
+     /* background: url('../images/xfctd/yinzhouScreen/1综合态势/总体态势/重点建筑物.png') no-repeat; */
+    background-size: 100% 100%;
+ }
+ .top-box-container .top-item1 .icon{
+    background: url('../../images/xfctd/yinzhouScreen/1综合态势/总体态势/重点建筑物.png') no-repeat;
+ }
+ .top-box-container .top-item2 .icon{
+    background: url('../../images/xfctd/yinzhouScreen/1综合态势/总体态势/重点单位.png') no-repeat;
+ }
+ .top-box-container .top-item3 .icon{
+    background: url('../../images/xfctd/yinzhouScreen/1综合态势/总体态势/联网设备数.png') no-repeat;
+ }
+ .top-box-container .top-item4 .icon{
+    background: url('../../images/xfctd/yinzhouScreen/1综合态势/总体态势/报警故障.png') no-repeat;
+ }
+ .top-box-container .top-box-item .content .icon img {
+     animation: rotate_icon 3s linear infinite;
+      -moz-animation: rotate_icon 3s linear infinite;
+      -webkit-animation: rotate_icon 3s linear infinite;
+      -o-animation: rotate_icon 3s linear infinite;
+ }
+@keyframes rotate_icon {
+   0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+  
+}
+
+
+ /* .chart {
+    width: 95%;
+    height: 80%;
+    margin-top: 50px;
+    padding: 0 10px;
+ }
+ .chart .row {
+        width: 100%;
+        height: 32px;
+        background: url('../images/xfctd/yinzhouXf/tr.png') no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 14px;
+        margin: 12px 0;
+        animation: breath_light 3s ease infinite;
+ }
+    .chart .row  .row-con1 {
+        width: 36px;
+        height: 22px;
+        
+    }
+    .chart .row .row-con2{
+        width: 80px;
+        padding-left: 10px;
+    }
+    .chart .row .row-con3 {
+        height: 8px;
+        background-size: 100% 100%;
+
+    }
+    .chart .row .row-con4 {
+        width: 25px;
+        height: 25px;
+        background: url('../images/xfctd/yinzhouXf/point.png') no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        left: -13px;
+    }
+    .chart .row .row-con5 {
+        flex: 1;
+        text-align: right;
+        padding-right: 10px ;
+
+    }
+    .chart .row .row-1 {
+        width: 208px;
+        background: url('../images/xfctd/yinzhouXf/top1.png') no-repeat;
+        animation: scale 2s 1 ease-in-out;
+    }
+    .chart .row .row-2 {
+        width: 159px;
+        background: url('../images/xfctd/yinzhouXf/top2.png') no-repeat;
+        animation: scale2 2s 1 ease-in-out;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+    }
+    .chart .row .row-3 {
+        width: 126px;
+        background: url('../images/xfctd/yinzhouXf/top3.png') no-repeat;
+        animation: scale3 2s 1 ease-in-out;
+    }
+    .chart .row .row-4 {
+        width: 105px;
+        background: url('../images/xfctd/yinzhouXf/top4.png') no-repeat;
+        animation: scale4 2s 1 ease-in-out;
+    }
+    .chart .row .row-5 {
+        width: 96px;
+        background: url('../images/xfctd/yinzhouXf/top5.png') no-repeat;
+        animation: scale5 2s 1 ease-in-out;
+    }
+    .chart .row .con1 {
+        background: url('../images/xfctd/yinzhouXf/01.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    .chart .row .con2 {
+        background: url('../images/xfctd/yinzhouXf/02.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    .chart .row  .con3 {
+        background: url('../images/xfctd/yinzhouXf/03.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    .chart .row .con4 {
+        background: url('../images/xfctd/yinzhouXf/04.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    .chart .row .con5 {
+        background: url('../images/xfctd/yinzhouXf/05.png') no-repeat;
+        background-size: 100% 100%;
+    } */
+  
+
+/*左边下面 echarts图表start*/
+  .left-container .bottom-box {
+    position: absolute;
+    top: 640px;
+    left: 0;
+    margin: 10px 0;
+    width: 448px;
+    height: 300px;
+    background: url("../../images/xfctd/labelBack.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* #echarts-container {
+    width: 100%;
+    height: 100%;
+  } */
+  #pieEcharts-container1 {
+    width: 400px;
+    height: 300px;
+  }
+  #shhz-warningInfo-container{
+      position: absolute;
+      left: 0px;
+      top: 47px;
+      width: 400px;
+      height: 255px;
+  }
+  /*左边下面 echarts图表end*/
+
+
+  
+  @keyframes scale{
+    0% {
+       width: 0;
+    }
+    50%{
+      width: 103px;
+    }
+    100%{
+      width: 208px;
+    }
+}
+@keyframes scale2{
+    0% {
+       width: 0;
+    }
+    50%{
+      width: 80px;
+    }
+    100%{
+      width: 159px;
+    }
+}
+@keyframes scale3{
+    0% {
+       width: 0;
+    }
+    50%{
+      width: 63px;
+    }
+    100%{
+      width: 126px;
+    }
+}
+@keyframes scale4{
+    0% {
+       width: 0;
+    }
+    50%{
+      width: 52px;
+    }
+    100%{
+      width: 105px;
+    }
+}
+@keyframes scale5{
+    0% {
+       width: 0;
+    }
+    50%{
+      width: 48px;
+    }
+    100%{
+      width: 96px;
+    }
+}
+@keyframes breath_light {
+    0% {
+        filter: brightness(100%);
+    }
+    50% {
+        filter: brightness(180%);
+    }
+
+    100% {
+        filter: brightness(100%);
+    }
+}
+.label-title{
+    position: absolute;
+    left: 24px;
+    top: 16px;
+    width: 200px;
+    height: 16px;
+    opacity: 1;
+
+    font-family: Source Han Sans CN;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+
+    color: #FFFFFF;
+}
+  /*左边模块样式end*/
+/**xfctd大屏样式start*/
+.zfqkTitle{
+    /* 矩形 86 */
+    position: absolute;
+    left: 20px;
+    top: 56px;
+    width: 195px;
+    height: 98px;
+    border-radius: 2px;
+    opacity: 1;
+    /*background: rgba(35, 132, 221, 0.12);*/
+    box-sizing: border-box;
+    /*border: 1px solid #1F6EDA;*/
+
+}
+.zfqkTitle1{
+    left: 20px;
+    top: 56px;
+}
+.zfqkTitle2{
+    left: 240px;
+    top: 56px;
+}
+.zfqkTitle3{
+    left: 20px;
+    top: 176px;
+}
+.zfqkTitle4{
+    left: 240px;
+    top: 176px;
+}
+.zfqkIcon{
+    width: 60px;
+    height: 80px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+.zfqkIcon1{
+    background: url("../../images/xfctd/zfIcon.png") no-repeat;
+}
+.zfqkIcon2{
+    background: url("../../images/xfctd/cfIcon.png") no-repeat;
+}
+.zfqkIcon3{
+    left: 20px;
+    top: 25px;
+    background: url("../../images/xfctd/yzgIcon.png") no-repeat;
+}
+.zfqkIcon4{
+    left: 20px;
+    top: 25px;
+    background: url("../../images/xfctd/wzgIcon.png") no-repeat;
+}
+
+.zfqkName{
+    position: absolute;
+    left: 100px;
+    top: 70px;
+    width: 84px;
+    height: 24px;
+    text-align: left;
+    opacity: 1;
+    font-family: PingFang SC;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+}
+.zfqkNumber{
+    position: absolute;
+    left: 95px;
+    top: 27px;
+    width: 68px;
+    height: 24px;
+    opacity: 1;
+    font-family: D-DIN;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 0em;
+
+    color: #0EFFFF;
+}
+.zfqkIndex{
+    position: absolute;
+    left: 18px;
+    top: 146px;
+    width: 411px;
+    height: 137px;
+    border-radius: 8px;
+    opacity: 1;
+    background: rgba(35, 132, 221, 0.12);
+    box-sizing: border-box;
+    border: 1px dashed rgba(96, 136, 197, 0.5);
+
+}
+.zfqkIndexInfo{
+    width: 205px;
+    height: 137px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.zfqkIndexInfo1{
+    top: 0;
+    left: 0;
+}
+.zfqkIndexInfo2{
+    top: 0;
+    left: 205px;
+}
+.topInfoName{
+    /* 执法 检查 情况 */
+    position: absolute;
+    left: 40px;
+    top: 63px;
+    width: 70px;
+    height: 72px;
+    opacity: 1;
+    font-family: PingFang SC;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #3BCFCF;
+
+}
+.topInfoNumber1{
+    /* 圆形 19 */
+    position: absolute;
+    left: 95px;
+    top: 32px;
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    box-sizing: border-box;
+    background: url("../../images/xfctd/ztzfcircle1.png") no-repeat;
+
+}
+.topInfoNumber2{
+    /* 圆形 19 */
+    position: absolute;
+    left: 95px;
+    top: 32px;
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    box-sizing: border-box;
+    background: url("../../images/xfctd/ztzfcircle2.png") no-repeat;
+
+}
+.topInfoNumberInfo{
+
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    width: 41px;
+    height: 24px;
+    opacity: 1;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+
+}

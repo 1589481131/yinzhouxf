@@ -1,0 +1,547 @@
+/*右边模块样式start*/
+.right-container {
+    position: absolute;
+    top: 102px;
+    right: 15px;
+    width: 448px;
+    height: 90%;
+    z-index: 999;
+  }
+  
+  .right-container .tit {
+    position: absolute;
+    left: 30px;
+    top: 16px;
+    height: 16px;
+    opacity: 1;
+    font-family: Source Han Sans CN;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    
+    color: #FFFFFF;
+  }
+ /*右边模块头部top样式 start*/
+  .right-container .top-box{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 448px;
+    height: 300px;
+    opacity: 1;
+    background: url("../images/newstyle/left_bg.png") no-repeat;
+    background-size: 100% 100%;
+  }
+
+.right-container .top-box .header-box {
+    height: 45px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+.right-container .top-box .header-box .title {
+    margin-right: 60px;
+    color: #fff;
+    font-size: 12px;
+}
+.right-container .top-box .header-box .num {
+    color: #0effff;
+}
+    
+  
+.right-container .top-box .middle-box {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 0 17px; */
+    margin: 6px 0;
+}
+.right-container .top-box .middle-box .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+}
+.right-container .top-box .middle-box .content .img {
+    width: 60px;
+    height: 60px;
+    background: url("../images/yinzhouXf/xuanzhuan1.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.right-container .top-box .middle-box .rotate {
+    animation: rotate 5s linear infinite;
+    -moz-animation: rotate 5s linear infinite;
+    -webkit-animation: rotate 5s linear infinite;
+    -o-animation: rotate 5s linear infinite;
+    }
+.right-container .top-box .middle-box img {
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        animation: rotateContent 5s linear infinite;
+        -moz-animation: rotateContent 5s linear infinite;
+        -webkit-animation: rotateContent 5s linear infinite;
+        -o-animation: rotateContent 5s linear infinite;
+    }
+.right-container .top-box .middle-box .content .text {
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 16px;
+    }
+.right-container .top-box .middle-box .content .text .title {
+        /* width: 100px; */
+        font-family: Source Han Sans CN;
+        font-size: 12px;
+        font-weight: normal;
+    }
+.right-container .top-box .middle-box .content .text .num {
+        width: 100%;
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0em;
+        color: #0effff;
+    }
+    
+    
+.right-container .top-box .bottom-box {
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-container .top-box .bottom-box .container {
+      width: 408px;
+      height: 100%;
+      padding: 0 10px;
+      background: url("../images/yinzhouXf/rightTopBg.png") no-repeat;
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+        }
+.right-container .top-box .bottom-box .container .title {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    }
+.right-container .top-box .container .icon {
+    }
+    .right-container .top-box .container .guzhang {
+        color: #ffb258;
+        margin: 0 5px 0 5px;
+    }
+
+.right-container .top-box .bottom-box .container  .content {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    }
+.right-container .top-box .bottom-box .container .content .img {
+        width: 50%;
+        height: 93%;
+        background: url("../images/yinzhouXf/rightTopBg2.png") no-repeat;
+        background-size: 100% 100%;
+    }
+.right-container .top-box .bottom-box .container  .content .text {
+        width: 200px;
+        height: 93%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 12px;
+        font-size: 12px;
+    }
+.right-container .top-box .bottom-box .container  .content .text .title-item {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+  /*右侧水资源模块样式start*/
+  .right-container .middle-box-container{
+    position: absolute;
+    right: 0px;
+    top: 320px;
+    width: 448px;
+    height: 300px;
+    opacity: 1;
+    background: url("../images/newstyle/left_bg.png") no-repeat;
+    background-size: 100% 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+#pieEcharts-container {
+    width: 200px;
+    height: 200px;
+    /* animation: rotateContent 5s linear infinite; */
+
+}
+.right-container .middle-box-container .shun-rotate {
+    position: absolute;
+    top: 22px;
+    width: 188px;
+    height: 188px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/yinzhouScreen/1综合态势/水资源/shun-rotate.png')no-repeat;
+    background-size: 100% 100%;
+    /* position: absolute;
+    top: 20px;
+    left: 30%; */
+    animation: rotate 5s linear infinite;
+}
+.right-container .middle-box-container .ni-rotate {
+    position: absolute;
+    top: 40px;
+    width: 151px;
+    height: 151px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/yinzhouScreen/1综合态势/水资源/ni-rotate.png')no-repeat;
+    background-size: 100% 100%;
+    animation: rotateContent 5s linear infinite;
+
+}
+.right-container .middle-box-container .shun-rotate2 {
+    position: absolute;
+    top: 78px;
+    width: 74px;
+    height: 74px;
+    /* background-color: red; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background: url('../images/yinzhouScreen/1综合态势/水资源/shun-rotate2.png')no-repeat;
+    background-size: 100% 100%;
+    animation: rotate 3s linear infinite;
+
+}
+.right-container .middle-box-container .ni-rotate2 {
+    position: absolute;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background: url('../images/yinzhouScreen/1综合态势/水资源/ni-rotate2.png')no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 102px;
+    left: 46%;
+    animation: rotateContent 2s linear infinite;
+}
+  .right-container .middle-box-container .echart-box {
+    margin-top: 15px;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .right-container .middle-box-container .tools-box {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .right-container .middle-box-container .tools-box .content {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-container .middle-box-container .tools-box .content .header {
+    display: flex;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #28A5F7;
+  }
+  .right-container .middle-box-container .tools-box .content .header .title {
+    padding-left: 10px;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .right-container .middle-box-container .tools-box .content .number {
+    margin-top: 16px;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 12px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+  }
+
+   /*右侧水资源模块样式end*/
+
+     
+  .right-container .bottom-box-container{
+    position: absolute;
+    right: 0px;
+    top: 640px;
+    width: 448px;
+    height: 300px;
+    opacity: 1;
+    background: url("../images/newstyle/left_bg.png") no-repeat;
+    background-size: 100% 100%;
+    margin: 10px 0 0 0;
+    
+  }
+  .right-container .bottom-box-container .street1 {
+    position: absolute;
+    left: 12px;
+    top: 77px;
+    width: 56px;
+    height: 56px;
+    background-size: 100% 100%;
+    background: url('../images/yinzhouScreen/1综合态势/镇街消防数字化/street1.png') no-repeat;
+  }
+  .right-container .bottom-box-container .street2 {
+    position: absolute;
+    left: 233px;
+    top: 84px;
+    width: 58px;
+    height: 57.59px;
+    background: url('../images/yinzhouScreen/1综合态势/镇街消防数字化/street2.png');
+  }
+  .right-container .bottom-box-container .street3 {
+    position: absolute;
+    left: 357px;
+    top: 218px;
+    width: 58px;
+    height: 57.59px;
+    background: url('../images/yinzhouScreen/1综合态势/镇街消防数字化/street3.png');
+  }
+  .right-container .bottom-box-container .street4 {
+    position: absolute;
+    left: 257px;
+    top: 223px;
+    width: 58px;
+    height: 57.59px;
+    background: url('../images/yinzhouScreen/1综合态势/镇街消防数字化/street4.png');
+  }
+  .right-container .bottom-box-container .street5 {
+    position: absolute;
+    left: 169px;
+    top: 232px;
+    width: 58px;
+    height: 57.59px;
+    background: url('../images/yinzhouScreen/1综合态势/镇街消防数字化/street5.png');
+  }
+  .right-container .bottom-box-container .street6 {
+    position: absolute;
+    left: 110px;
+    top: 190px;
+    width: 58px;
+    height: 57.59px;
+    background: url('../images/yinzhouScreen/1综合态势/镇街消防数字化/street6.png');
+  }
+  .right-container .bottom-box-container .street7 {
+    position: absolute;
+    left: 109px;
+    top: 99px;
+    width: 58px;
+    height: 57.59px;
+    background: url('../images/yinzhouScreen/1综合态势/镇街消防数字化/street7.png');
+  }
+  .right-container .bottom-box-container .street8 {
+    position: absolute;
+    left: 26px;
+    top: 231px;
+    width: 58px;
+    height: 57.59px;
+    background: url('../images/yinzhouScreen/1综合态势/镇街消防数字化/street8.png');
+  }
+  .right-container .bottom-box-container .street9 {
+    position: absolute;
+    left: 317px;
+    top: 149px;
+    width: 58px;
+    height: 57.59px;
+    background: url('../images/yinzhouScreen/1综合态势/镇街消防数字化/street9.png');
+  }
+  .right-container .bottom-box-container .street10 {
+    position: absolute;
+    left: 324px;
+    top: 75px;
+    width: 58px;
+    height: 57.59px;
+    background: url('../images/yinzhouScreen/1综合态势/镇街消防数字化/street9.png');
+  }
+  .right-container .bottom-box-container .street11 {
+    position: absolute;
+    left: 54px;
+    top: 151px;
+    width: 58px;
+    height: 57.59px;
+    background: url('../images/yinzhouScreen/1综合态势/镇街消防数字化/street_error.png');
+  }
+  .right-container .bottom-box-container .street12 {
+    position: absolute;
+    left: 179px;
+    top: 142px;
+    width: 82px;
+    height: 82px;
+    background: url('../images/yinzhouScreen/1综合态势/镇街消防数字化/street_center.png');
+  }
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+    }
+@keyframes rotateContent {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(-90deg);
+    }
+    50% {
+        -webkit-transform: rotate(-180deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+    }
+    /*右边模块样式end*/
+
+/*右边下面 echarts图表start*/
+.right-container .bottom-echart-box {
+    position: absolute;
+    top: 640px;
+    left: 0;
+    margin: 10px 0;
+    width: 448px;
+    height: 300px;
+    background: url("../images/newstyle/left_bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+#echarts-container {
+    width: 100%;
+    height: 100%;
+}
+
+.right-container .bottom-box-container .chart {
+
+}
+/*右边下面 echarts图表end*/
+
+/* 平面图样式start */
+.right-container .middle-box-container .tab {
+ width: 448px;
+ height: 260px;
+ /* margin-top: 40px; */
+}
+.right-container .middle-box-container .tab-box {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.right-container .middle-box-container .tab-box .tab-item{
+  width: 112px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #0c2c5f;
+  /* flex: 1; */
+  
+}
+.right-container .middle-box-container .tab-box .active{
+  width: 112px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #0c2c5f;
+  border: 1px solid #0c2c5f;
+  /* flex: 1; */
+  
+}
+.right-container .middle-box-container .tab-box :hover {
+   background-color: #0c2c5f;
+}
+
+.right-container .middle-box-container .tab-content {
+  width: 100%;
+  height: 220px;
+}
+.right-container .middle-box-container .tab-content img {
+  width: 448px;
+  height: 220px;
+}
+
+/* 平面图样式end */
+
+/* 整合接入单位以及单位分布类型 start*/
+.right-container .bottom-box-container .unit-nav {
+    width: 428px;
+    height: 30px;
+    color: #fff;
+    margin-top: 40px;
+    margin: 40px 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-container .bottom-box-container .unit-nav .unit-nav-item {
+    width: 214px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #0c2c5f;
+    /* background-color:#0c2c5f; */
+    cursor: pointer;
+}
+.right-container .bottom-box-container .unit-nav .active {
+    background-color:#0c2c5f;
+}
+.right-container .bottom-box-container .zj-chart {
+  visibility: hidden;
+}
+.right-container .bottom-box-container .zj-content-active {
+    visibility: visible;
+
+}
+
+/* 整合接入单位以及单位分布类型 end*/

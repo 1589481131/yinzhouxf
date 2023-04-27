@@ -1,0 +1,591 @@
+/*左边模块样式start*/
+.left-container {
+    position: absolute;
+    top: 102px;
+    left: 15px;
+    width: 448px;
+    height: 90%;
+    background-color: rgba(0,0,0,.5);
+    z-index: 999;
+  }
+  .left-container .top-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 448px;
+    height: 300px;
+    opacity: 1;
+    background: url("../../images/shhz/labelBack.png") no-repeat;
+    background-size: 100% 100%;
+  }
+.left-container .middle-box {
+    position: absolute;
+    top: 325px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 448px;
+    height: 300px;
+    opacity: 1;
+    background: url("../../images/shhz/labelBack.png") no-repeat;
+    background-size: 100% 100%;
+}
+ #unitCharts-container {
+  width: 250px;
+  height: 250px;
+ }
+ .top-box-container {
+    width: 100%;
+    height: 70%;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+ }
+ .top-box-container .top-box-item {
+    width: 50%;
+    height: 50%;
+    /* margin: 0 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ }
+ .top-box-container .top-box-item .title {
+    font-family: PingFang SC;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+    opacity: .85;
+ }
+ 
+ .top-box-container .content {
+    width: 190px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+ }
+ .top-box-container .top-box-item .content .number {
+    width: 150px;
+    height: 34px;
+    background: url('../../images/shhz/yinzhouScreen/1综合态势/总体态势/nav_Bg.png') no-repeat;
+    background-size: 100% 100%;
+    line-height: 40px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+ } 
+ .top-box-container .top-box-item .content .icon {
+    width: 40px;
+    height: 40px;
+     /* background: url('../images/shhz/yinzhouScreen/1综合态势/总体态势/重点建筑物.png') no-repeat; */
+    background-size: 100% 100%;
+ }
+ .top-box-container .top-item1 .icon{
+    background: url('../../images/shhz/yinzhouScreen/1综合态势/总体态势/重点建筑物.png') no-repeat;
+ }
+ .top-box-container .top-item2 .icon{
+    background: url('../../images/shhz/yinzhouScreen/1综合态势/总体态势/重点单位.png') no-repeat;
+ }
+ .top-box-container .top-item3 .icon{
+    background: url('../../images/shhz/yinzhouScreen/1综合态势/总体态势/联网设备数.png') no-repeat;
+ }
+ .top-box-container .top-item4 .icon{
+    background: url('../../images/shhz/yinzhouScreen/1综合态势/总体态势/报警故障.png') no-repeat;
+ }
+ .top-box-container .top-box-item .content .icon img {
+     animation: rotate_icon 3s linear infinite;
+      -moz-animation: rotate_icon 3s linear infinite;
+      -webkit-animation: rotate_icon 3s linear infinite;
+      -o-animation: rotate_icon 3s linear infinite;
+ }
+@keyframes rotate_icon {
+   0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+  
+}
+
+
+ /* .chart {
+    width: 95%;
+    height: 80%;
+    margin-top: 50px;
+    padding: 0 10px;
+ }
+ .chart .row {
+        width: 100%;
+        height: 32px;
+        background: url('../images/shhz/yinzhouXf/tr.png') no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 14px;
+        margin: 12px 0;
+        animation: breath_light 3s ease infinite;
+ }
+    .chart .row  .row-con1 {
+        width: 36px;
+        height: 22px;
+        
+    }
+    .chart .row .row-con2{
+        width: 80px;
+        padding-left: 10px;
+    }
+    .chart .row .row-con3 {
+        height: 8px;
+        background-size: 100% 100%;
+
+    }
+    .chart .row .row-con4 {
+        width: 25px;
+        height: 25px;
+        background: url('../images/shhz/yinzhouXf/point.png') no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        left: -13px;
+    }
+    .chart .row .row-con5 {
+        flex: 1;
+        text-align: right;
+        padding-right: 10px ;
+
+    }
+    .chart .row .row-1 {
+        width: 208px;
+        background: url('../images/shhz/yinzhouXf/top1.png') no-repeat;
+        animation: scale 2s 1 ease-in-out;
+    }
+    .chart .row .row-2 {
+        width: 159px;
+        background: url('../images/shhz/yinzhouXf/top2.png') no-repeat;
+        animation: scale2 2s 1 ease-in-out;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+    }
+    .chart .row .row-3 {
+        width: 126px;
+        background: url('../images/shhz/yinzhouXf/top3.png') no-repeat;
+        animation: scale3 2s 1 ease-in-out;
+    }
+    .chart .row .row-4 {
+        width: 105px;
+        background: url('../images/shhz/yinzhouXf/top4.png') no-repeat;
+        animation: scale4 2s 1 ease-in-out;
+    }
+    .chart .row .row-5 {
+        width: 96px;
+        background: url('../images/shhz/yinzhouXf/top5.png') no-repeat;
+        animation: scale5 2s 1 ease-in-out;
+    }
+    .chart .row .con1 {
+        background: url('../images/shhz/yinzhouXf/01.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    .chart .row .con2 {
+        background: url('../images/shhz/yinzhouXf/02.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    .chart .row  .con3 {
+        background: url('../images/shhz/yinzhouXf/03.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    .chart .row .con4 {
+        background: url('../images/shhz/yinzhouXf/04.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    .chart .row .con5 {
+        background: url('../images/shhz/yinzhouXf/05.png') no-repeat;
+        background-size: 100% 100%;
+    } */
+  
+
+/*左边下面 echarts图表start*/
+  .left-container .bottom-box {
+    position: absolute;
+    top: 640px;
+    left: 0;
+    margin: 10px 0;
+    width: 448px;
+    height: 300px;
+    background: url("../../images/shhz/labelBack.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* #echarts-container {
+    width: 100%;
+    height: 100%;
+  } */
+  #pieEcharts-container1 {
+    width: 400px;
+    height: 300px;
+  }
+  #shhz-warningInfo-container{
+      position: absolute;
+      left: 0px;
+      top: 47px;
+      width: 400px;
+      height: 255px;
+  }
+  /*左边下面 echarts图表end*/
+
+
+  
+  @keyframes scale{
+    0% {
+       width: 0;
+    }
+    50%{
+      width: 103px;
+    }
+    100%{
+      width: 208px;
+    }
+}
+@keyframes scale2{
+    0% {
+       width: 0;
+    }
+    50%{
+      width: 80px;
+    }
+    100%{
+      width: 159px;
+    }
+}
+@keyframes scale3{
+    0% {
+       width: 0;
+    }
+    50%{
+      width: 63px;
+    }
+    100%{
+      width: 126px;
+    }
+}
+@keyframes scale4{
+    0% {
+       width: 0;
+    }
+    50%{
+      width: 52px;
+    }
+    100%{
+      width: 105px;
+    }
+}
+@keyframes scale5{
+    0% {
+       width: 0;
+    }
+    50%{
+      width: 48px;
+    }
+    100%{
+      width: 96px;
+    }
+}
+@keyframes breath_light {
+    0% {
+        filter: brightness(100%);
+    }
+    50% {
+        filter: brightness(180%);
+    }
+
+    100% {
+        filter: brightness(100%);
+    }
+}
+.label-title{
+    position: absolute;
+    left: 24px;
+    top: 16px;
+    width: 200px;
+    height: 16px;
+    opacity: 1;
+
+    font-family: Source Han Sans CN;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+
+    color: #FFFFFF;
+}
+.dataCount{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+}
+.dataCount1{
+    left: 50px;
+    top: 50px;
+}
+.dataCount2{
+    left: 180px;
+    top: 50px;
+}
+.dataCount3{
+    left: 315px;
+    top: 50px;
+}
+.dataCount4{
+    left: 50px;
+    top: 175px;
+}
+.dataCount5{
+    left: 180px;
+    top: 175px;
+}
+.dataCount6{
+    left: 315px;
+    top: 175px;
+}
+.dataCountLabel{
+    width: 80px;
+    height: 80px;
+}
+.dataCountLabel1{
+    background: url("../../images/shhz/dataCount01.png") no-repeat;
+}
+.dataCountLabel2{
+    background: url("../../images/shhz/dataCount02.png") no-repeat;
+}
+.dataCountLabel3{
+    background: url("../../images/shhz/dataCount03.png") no-repeat;
+}
+.dataCountLabel4{
+    background: url("../../images/shhz/dataCount04.png") no-repeat;
+}
+.dataCountLabel5{
+    background: url("../../images/shhz/dataCount05.png") no-repeat;
+}
+.dataCountLabel6{
+    background: url("../../images/shhz/dataCount06.png") no-repeat;
+}
+.dataCountNumber{
+    position: absolute;
+    left: 16px;
+    top: 29px;
+    width: 47px;
+    height: 29px;
+    opacity: 1;
+    text-align: center;
+    font-family: Source Han Sans CN;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+}
+.dataCountName{
+    position: absolute;
+    left: 2px;
+    top: 92px;
+    width: 77px;
+    height: 17px;
+    opacity: 1;
+    font-family: Source Han Sans CN;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+
+}
+.midCountLabel{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 198px;
+    height: 80px;
+    border-radius: 8px;
+    opacity: 1;
+    background: rgba(35, 132, 221, 0.12);
+    box-sizing: border-box;
+    border: 1px dashed rgba(96, 136, 197, 0.5);
+
+}
+.midCountLabel1{
+    left: 20px;
+    top: 45px;
+}
+.midCountLabel2{
+    left: 235px;
+    top: 45px;
+}
+.midCountLabelTitle{
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 60px;
+    height: 12px;
+    opacity: 1;
+    font-family: Source Han Sans CN;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 0em;
+}
+.midCountLabelTitle1{
+    color: #01CDFF;
+    left: 19px;
+    top: 12px;
+}
+.midCountLabelTitle2{
+    color: #FF4455;
+    left: 113px;
+    top: 12px;
+}
+.midCountLabelTitle3{
+    color: #02FFFF;
+    left: 19px;
+    top: 12px;
+}
+.midCountLabelTitle4{
+    color: #FEB904;
+    left: 113px;
+    top: 12px;
+}
+.midCountLabelNumber{
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    width: 77px;
+    height: 28px;
+    opacity: 1;
+    font-family: Arial;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+
+}
+.midCountLabelNumber1{
+    left: 12px;
+    top: 30px;
+
+}
+.midCountLabelNumber2{
+    left: 102px;
+    top: 30px;
+
+}
+.midCountIndex{
+    position: absolute;
+    left: 30px;
+    top: 145px;
+    width: 101px;
+    height: 50px;
+    opacity: 1;
+}
+.midCountIndex1{
+    left: 30px;
+    top: 145px;
+}
+.midCountIndex2{
+    left: 160px;
+    top: 145px;
+}
+.midCountIndex3{
+    left: 296px;
+    top: 145px;
+}
+.midCountIndex4{
+    left: 30px;
+    top: 224px;
+}
+.midCountIndex5{
+    left: 160px;
+    top: 224px;
+}
+.midCountIndex6{
+    left: 296px;
+    top: 224px;
+}
+.midCountIndexIcon{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+}
+.midCountIndexIcon1{
+    background: url("../../images/shhz/smokeIcon.png") no-repeat;
+}
+.midCountIndexIcon2{
+    background: url("../../images/shhz/tempIcon.png") no-repeat;
+}
+.midCountIndexIcon3{
+    background: url("../../images/shhz/gasIcon.png") no-repeat;
+}
+.midCountIndexIcon4{
+    background: url("../../images/shhz/bottleIcon.png") no-repeat;
+}
+.midCountIndexIcon5{
+    background: url("../../images/shhz/elecIcon.png") no-repeat;
+}
+.midCountIndexIcon6{
+    background: url("../../images/shhz/chargingIcon.png") no-repeat;
+}
+.midCountIndexName{
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    width: 75px;
+    height: 12px;
+    opacity: 1;
+    font-family: Source Han Sans CN;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 12px;
+    text-align: left;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+.midCountIndexNumber{
+    position: absolute;
+    left: 60px;
+    top: 34px;
+    width: 41px;
+    height: 12px;
+    opacity: 1;
+    font-family: Source Han Sans CN;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 12px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+}
+  /*左边模块样式end*/

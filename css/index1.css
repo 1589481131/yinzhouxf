@@ -1,0 +1,227 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+ 
+}
+* { 
+  padding: 0;
+  margin: 0;
+
+}
+#cesiumContainer {
+  width: 1920px;
+  height: 1080px;
+}
+.container {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  background-color: rgba(0,0,0,0.5);
+  
+}
+/*header 样式start*/
+.header-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background: url("../images/newstyle/new_top_title.png") no-repeat;
+  background-size: 100% 100%;
+  z-index: 999;
+}
+.header-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+.header-left .time {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  left: 20px;
+  top: 8px;
+  width: 200px;
+  height: 28px;
+  opacity: 1;
+  font-family: LCD2Ultra;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  z-index: 1;
+}
+.header-left .nav {
+  position: absolute;
+  left: 20px;
+  top: 48px;
+  width: 456px;
+  height: 34px;
+  opacity: 1;
+  display: flex;
+}
+.nav .nav-item {
+  flex: 1;
+  width: 107px;
+  height: 34px;
+  
+  background-size: 100% 100%;
+}
+.nav .nav1 {
+  background: url("../images/yinzhouXf/综合态势.png") no-repeat;
+}
+.nav .nav2 {
+  background: url("../images/yinzhouXf/火灾防控.png") no-repeat;
+}
+.nav .nav3 {
+  background: url("../images/yinzhouXf/消防执法.png") no-repeat;
+}
+.nav .nav4 {
+  background: url("../images/yinzhouXf/救援辅助.png") no-repeat;
+}
+.light {
+  position: absolute;
+  left: 632px;
+  top: 16px;
+  width: 664px;
+  height: 164px;
+  opacity: 1;
+  background: url("../images/yinzhouXf/光2.png") no-repeat;
+  background-size: 100% 100%;
+}
+.top-title {
+  position: absolute;
+  left: 699px;
+  top: 18px;
+  opacity: 1;
+  width: 27.6%;
+  height: 62px;
+  font-family: YouSheBiaoTiHei;
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 62px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  background: linear-gradient(180deg, #FFFFFF -2%, #FFFFFF 37%, #B4CFF2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+}
+.header-right {
+  position: absolute;
+  right: 37px;
+  top: 44px;
+  background-color: red;
+  width: 411px;
+  height: 49px;
+  background: url("../images/yinzhouXf/rightTopConner.png") no-repeat;
+  background-size: 100% 100%;
+}
+/*header 样式end*/
+
+.section-container {
+  position: absolute;
+  top: 102px;
+  left: 464px;
+  width: 994px;
+  height: 174px;
+  z-index: 999;
+}
+.section-container .search {
+  width: 136px;
+  height: 136px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: url('../images/yinzhouScreen/1综合态势/中间/search_Bg.png') no-repeat;
+  background-size: 100% 100%;
+  animation: search_rotate 5s linear infinite;
+  -moz-animation: search_rotate 5s linear infinite;
+  -webkit-animation: search_rotate 5s linear infinite;
+  -o-animation: search_rotate 5s linear infinite;
+}
+
+@keyframes search_rotate {
+   0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.section-container .search-input {
+  position: absolute;
+  top: 10px;
+  left: 24px;
+  font-family: Source Han Sans CN;
+  font-size: 12px;
+  font-weight: normal;
+  color: #6DACFF;
+
+}
+.section-container .search-input .input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.section-container .search-input .input .icon {
+  
+}
+.section-container .search-input .input input {
+  width: 260px;
+  height: 32px;
+  border-radius: 2px;
+  opacity: 1;
+  background: rgba(6, 49, 76, 0.75);
+  box-sizing: border-box;
+  border: 1px solid #2D6DC1;
+  text-indent: 10px;
+  margin-top: -18px;
+  outline: none
+}
+.section-container .search-input .input input::input-placeholder{
+	color: rgba(255, 255, 255, 0.75);
+}
+/* .section-container .search-input .layer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+} */
+
+/*table表格样式*/
+
+table {
+  width: 448px;
+  /* height: 200px; */
+  border-color: #00111B;
+}
+tr {
+  width: 100%;
+  height: 38px;
+  background: #001E2F;
+  color: rgba(255, 255, 255, 0.75);
+
+}
+tr td {
+  width: 200px;
+  height: 30px;
+
+}
+
+
+
+

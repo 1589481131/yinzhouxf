@@ -1,0 +1,432 @@
+ 
+
+ .tit {
+    position: absolute;
+    left: 30px;
+    top: 16px;
+    height: 16px;
+    font-family: Source Han Sans CN;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+}
+
+ .left-box {
+    display: flex;
+    align-items: center;
+    width: 448px;
+    height: 300px;
+    opacity: 1;
+    background: url("../images/newstyle/left_bg.png") no-repeat;
+    background-size: 100% 100%;
+    z-index: 999;
+
+}
+ .left-box .middle-box-container {
+    width: 100%;
+    height: 246px;
+    margin: 54px 0 0 0;
+
+}
+
+ .left-box .middle-box-container .header-box {
+    width: 408px;
+    height: 40px;
+    margin: 50px 20px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .left-box .middle-box-container .header-box .title {
+    width: 56px;
+    font-family: Source Han Sans CN;
+    font-size: 14px;
+    font-weight: normal;
+    color: #A3B4E2;
+    padding-right: 4px;
+}
+
+ .left-box .middle-box-container .header-box .select {
+    width: 160px;
+    height: 32px;
+    background: rgba(35, 132, 221, 0.12);
+    box-sizing: border-box;
+    border: 1px solid #1F6EDA;
+    line-height: 32px;
+    color: #fff;
+    font-size: 14px;
+    text-indent: 14px;
+}
+
+ .left-box .middle-box-container .content-box {
+    width: 100%;
+    display: flex;
+    /* margin-top: 80px; */
+}
+
+ .left-box .middle-box-container .content-box .chart-box {
+    width: 200px;
+    height: 200px;
+}
+
+ .left-box .middle-box-container .content-box .table {
+    width: 248px;
+    height: 200px;
+
+}
+
+
+
+
+
+ .right-box {
+    position: absolute;
+    top: 340px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    width: 448px;
+    height: 300px;
+    opacity: 1;
+    background: url("../images/newstyle/left_bg.png") no-repeat;
+    background-size: 100% 100%;
+    z-index: 999;
+}
+
+ .right-box .middle-box-container {
+    width: 100%;
+    height: 246px;
+    margin: 54px 0 0 0;
+
+}
+
+ .right-box .middle-box-container .header-box {
+    width: 408px;
+    height: 40px;
+    margin: 50px 20px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .right-box .middle-box-container .header-box .title {
+    width: 56px;
+    font-family: Source Han Sans CN;
+    font-size: 14px;
+    font-weight: normal;
+    color: #A3B4E2;
+    padding-right: 4px;
+}
+
+ .right-box .middle-box-container .header-box .select {
+    width: 342px;
+    height: 32px;
+    background: rgba(35, 132, 221, 0.12);
+    box-sizing: border-box;
+    border: 1px solid #1F6EDA;
+    line-height: 32px;
+    color: #fff;
+    font-size: 14px;
+    text-indent: 14px;
+}
+
+ .right-box .middle-box-container .bar-chart {
+    width: 100%;
+    height: 200px;
+    /* margin-top: 80px; */
+}
+/* 弹框信息 */
+#device-info {
+    position: absolute;
+    top: 30%;
+    left: 52%;
+    width: 428px;
+    height: 322px;
+    z-index: 999;
+}
+
+.header-left .nav {
+    position: absolute;
+    left: 20px;
+    top: 48px;
+    width: 456px;
+    height: 34px;
+    opacity: 1;
+    display: flex;
+  }
+  .nav .nav-item {
+    flex: 1;
+    width: 107px;
+    height: 34px;
+    
+    background-size: 100% 100%;
+  }
+  .nav .nav1 {
+    background: url("../images/newstyle/综合态势2.png") no-repeat;
+  }
+  .nav .nav2 {
+    background: url("../images/yinzhouXf/火灾防控.png") no-repeat;
+  }
+  .nav .nav3 {
+    background: url("../images/yinzhouXf/消防执法.png") no-repeat;
+  }
+  .nav .nav4 {
+    background: url("../images/jyfz/救援辅助.png") no-repeat;
+  }
+
+   /* 点位弹窗样式 start*/
+ #info_box {
+    position: absolute;
+    display: block;
+    z-index: 999;
+    width: 300px;
+    height: 200px;
+    background-color: red;
+   }
+   #info {
+    position: absolute;  
+    z-index: 999;
+    display: none;
+    /* width: 336px;
+    display:block;
+    height: 170px;
+    border-radius: 4px;
+    color: #fff;
+    background: url('../images/newstyle/info-build-bg.png') no-repeat;
+    background-color: 100% 100%; */
+  }  
+  #info .info-unit-window {
+    width: 300px;
+    height: 362px;
+    display: block;
+    border-radius: 4px;
+    color: #fff;
+    background: url('../images/newstyle/info-unit-bg.png') no-repeat;
+    background-size: 100% 100%;
+  } 
+  #info .info-build-window {
+    width: 402px;
+    height: 190px;
+    display: block;
+    border-radius: 4px;
+    color: #fff;
+    background: url('../images/newstyle/info-build-bg.png') no-repeat;
+    background-size: 100% 100%;
+  } 
+  #info .info-smoke-window {
+    width: 336px;
+    height: 170px;
+    display: block;
+    border-radius: 4px;
+    color: #fff;
+    background: url('../images/newstyle/info-build-bg.png') no-repeat;
+    background-size: 100% 100%;
+  } 
+  #info .info-water-window {
+    width: 336px;
+    height: 170px;
+    display: block;
+    border-radius: 4px;
+    color: #fff;
+    background: url('../images/newstyle/info-build-bg.png') no-repeat;
+    background-size: 100% 100%;
+  }
+  #info .info-xfs-window {
+    width: 336px;
+    height: 170px;
+    display: block;
+    border-radius: 4px;
+    color: #fff;
+    background: url('../images/newstyle/info-build-bg.png') no-repeat;
+    background-size: 100% 100%;
+  }
+  #info .info-camera-window {
+    width: 336px;
+    height: 170px;
+    display: block;
+    border-radius: 4px;
+    color: #fff;
+    background: url('../images/newstyle/info-build-bg.png') no-repeat;
+    background-size: 100% 100%;
+  }
+  #info img {
+    margin: 16px 0 0 30px;
+  } 
+  #info .info-title {
+    height: 16px;
+    line-height: 16px;
+    display: inline-block;
+  }
+  #info .info-close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+  }
+   #info::after {
+    content: '';
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(20,63,91) transparent transparent transparent;
+    bottom: -20px;
+    left: 150px;
+   }
+   #info .unit-title {
+    color: #0DCAFA;
+    margin: 20px;
+   }
+   #info .unit-content {
+    width: 250px;
+    height: 68px;
+    margin: 0 0 10px 20px;
+    font-size: 12px;
+    color: rgba(255,255,255 .8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   }
+   #info .device {
+    width: 260px;
+    height: 180px;
+    margin: 0 20px;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   }
+   #info .device .device-item {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+   }
+   #info .device .device-item span {
+    display: inline-block;
+    
+   }
+   #info .device .device-item .span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+   }
+   #info .device .device-item .online {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1feded;
+   }
+   #info .device .device-item .offline {
+    font-size: 20px;
+    font-weight: bold;
+     color: #d4d4d4;
+   }
+   #info .device .device-item .error {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffb258;
+   }
+  
+   /*烟感样式*/
+   #info .smoke-title {
+    color: #FB4329;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+   }
+   #info .somke-content {
+    width: 300px;
+    height: 100px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: rgba(255,255,255 .8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   }
+   #info .somke-content .error {
+    color: #FB4329;
+   }
+   #info .somke-content .normal {
+    color: #0DCAFA;
+   }
+   /* 水源样式 */
+  
+   #info .water-title {
+    color: #0DCAFA;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+   }
+   /* 摄像头 */
+   #info .camera-title {
+    color: #0DCAFA;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+   }
+  
+   /* 建筑物样式 */
+  #info .build-title {
+    color: #0DCAFA;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+  }
+  
+  #info .build-content {
+    width: 300px;
+    height: 100px;
+    margin: 0 0 10px 20px;
+    font-size: 14px;
+    color: rgba(255,255,255 .8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   }
+  
+   /* 点位弹窗样式 end*/
+
+   /* 图片预览start */
+ .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+  }
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+   /* 图片预览end */
+
+   .info-close-video{
+    position: absolute;
+    top: 288px;
+    left: 70.1%;
+    z-index: 10000;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+  }
+
+  
